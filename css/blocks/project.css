@@ -1,0 +1,126 @@
+.project {
+    padding: 24px;
+    margin-bottom: 20px;
+    border-bottom: 4px solid var(--border-color);
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    width: 100%;
+
+    transition: outline-width 200ms linear;
+}
+
+.project:hover {
+    outline: 8px solid rgba(36, 36, 36, 0.1);
+}
+
+@media (min-width: 660px) {
+    .project {
+        width: 49%;
+    }
+}
+
+.project__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: start;
+}
+
+.project__title {
+    margin: 0;
+}
+
+.project__date {
+    margin: 0 0 0 auto;
+
+    font-style: italic;
+}
+
+.project__description {
+    margin: 16px 0;
+    width: 100%;
+}
+
+.project__technologies {
+    margin: 0 0 20px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+
+    line-height: 30px;
+}
+
+.project__technology {
+    display: inline-block;
+    border-bottom: 1px solid var(--border-color-dark);
+    width: 50%;
+    padding-left: 8px;
+}
+
+.project__technology-level {
+    display: inline-block;
+    border-bottom: 1px solid var(--border-color-dark);
+    width: 50%;
+    margin: 0;
+    padding-right: 8px;
+
+    text-align: right;
+    font-weight: bold;
+}
+
+.project__technology-level--base {
+    color: var(--base-tech-color);
+}
+
+.project__technology-level--normal {
+    color: var(--normal-tech-color);
+}
+
+.project__technology-level--advanced {
+    color: var(--advanced-tech-color);
+}
+
+.project__link {
+    display: block;
+    padding: 16px;
+    border: 2px solid transparent;
+    margin-top: auto;
+
+    text-decoration: none;
+    transition: all 200ms linear;
+}
+
+.project__link:focus-visible {
+    outline: none;
+    box-shadow: 0 1px var(--white-color), 0 4px 0 var(--normal-tech-color);
+}
+
+.project__link--outline {
+    color: var(--black-color);
+
+    border-color: var(--border-color-dark);
+}
+
+.project__link--outline:hover {
+    background-color: var(--lightgray--color);
+}
+
+.project__link--outline:active {
+    background-color: var(--border-color);
+}
+
+.project__link--green {
+    color: var(--white-color);
+
+    border-color: var(--advanced-tech-color);
+    background-color: var(--advanced-tech-color);
+}
+
+.project__link--green:hover {
+    border-color: var(--advanced-tech-color-dark);
+    background-color: var(--advanced-tech-color-dark);
+}
+
+.project__link--green:active {
+    color: var(--border-color);
+}

@@ -1,0 +1,10 @@
+@import "variables.css";
+@import "fonts.css";
+@import "global.css";
+@import "blocks/container.css";
+@import "blocks/main-title.css";
+@import "blocks/projects-list.css";
+@import "blocks/project.css";
+@import "blocks/footer.css";
+@import "blocks/email.css";
+@import "blocks/github.css";

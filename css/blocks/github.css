@@ -1,0 +1,11 @@
+.github {
+    display: inline-block;
+    margin-left: auto;
+    width: 24px;
+    height: 24px;
+
+    color: transparent;
+    font-size: 1px;
+    background: url("../../image/icon-github.svg") no-repeat center;
+    background-size: 100%;
+}
